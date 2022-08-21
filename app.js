@@ -17,7 +17,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: '*',
+        origin: 'https://ispit-js.herokuapp.com/',
         methods: ['GET', 'POST', 'PUT'],
         credentials: true
     },
@@ -25,7 +25,7 @@ const io = new Server(server, {
 });
 
 var corsOptions = {
-    origin: '*',
+    origin: 'https://ispit-js.herokuapp.com/',
     optionsSuccessStatus: 200
 }
 
