@@ -1,7 +1,8 @@
 {
 
   "scripts":{
-    "start": "node app.js"
+    "start": "node app.js & node app_auth.js & node app_rest.js"
+
   },
 
 
