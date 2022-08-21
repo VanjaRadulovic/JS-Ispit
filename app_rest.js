@@ -9,7 +9,7 @@ const komentarapi = require('./routes/komentarR');
 const app = express();
 
 var corsOptions = {
-    origin: '*',
+    origin: 'https://ispit-js.herokuapp.com/',
     optionsSuccessStatus: 200
 }
 
