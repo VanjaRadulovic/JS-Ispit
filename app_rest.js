@@ -23,7 +23,7 @@ app.use('/admin/video', videoapi);
 app.use('/admin/komentar', komentarapi);
 
 
-app.listen({ port: 8500 }, async () => {
+app.listen({ port: process.env.PORT || 8500 }, async () => {
     await sequelize.authenticate();
     console.log("povezan app za restapi");
 });
