@@ -131,7 +131,7 @@ app.use(staticMdl);
 app.use(history({ index: '/index.html' }));
 app.use(staticMdl);
 
-server.listen({ port: 8000 }, async () => {
+server.listen({ port: process.env.PORT || 8000 }, async () => {
     await sequelize.authenticate();
     console.log("startovan app");
 });
