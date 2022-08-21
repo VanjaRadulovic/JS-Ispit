@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(cors(corsOptions));
 
 
-app.post('https://ispit-js.herokuapp.com/api_register', (req, res) => {
+app.post('/api_register', (req, res) => {
 
     const schema = Joi.object().keys({
         name: Joi.string().min(4).max(15).required(),
@@ -60,7 +60,7 @@ app.post('https://ispit-js.herokuapp.com/api_register', (req, res) => {
     }
 });
 
-app.post('https://ispit-js.herokuapp.com/api_login', (req, res) => {
+app.post('/api_login', (req, res) => {
 
     const schema = Joi.object().keys({
         username: Joi.string().trim().required(),
