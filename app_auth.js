@@ -95,7 +95,7 @@ app.post('/api_login', (req, res) => {
     }
 });
 
-app.listen({ port: 9000 }, async () => {
+app.listen({ port: process.env.PORT || 9000 }, async () => {
     await sequelize.authenticate();
     console.log("povezan app za autentifikaciju");
 });
